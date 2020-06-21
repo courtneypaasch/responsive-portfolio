@@ -1,0 +1,213 @@
+
+
+body {
+    background-color: rgb(216, 224, 224);
+}
+/* set the header for 640px */
+header {
+    background: darkcyan;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    height: 75px;
+}
+ 
+/* navigation settings - color, size, etc */
+nav{
+    background-color: azure;
+    border-bottom: 2px solid darkgrey;
+}
+
+.navbar-brand {
+    opacity: 0;
+    width: 0px;
+}
+
+.nav-link {
+    color: darkcyan;
+}
+
+.nav-link:hover {
+    color: rgb(32, 32, 32);
+}
+
+/* main formating for all pages */
+main {
+    width: 95%;
+    height: auto;
+    background-color: azure;
+    margin: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h1 {
+    color: darkcyan;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+hr {
+    width:  90%;
+    border-width: 3px;
+}
+
+/* contact form settings */
+form {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-size: large;
+}
+
+form button {
+    background-color: darkcyan !important;
+    border: darkcyan !important;
+    color: azure !important;
+}
+
+/* about me page settings */
+#headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%
+}
+#bio {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* portfolio page settings */
+.container {
+    position: relative;
+    padding: 5%;
+  }
+  
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 350px;
+  }
+  
+  .banner {
+    position: absolute;
+    top: 65%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    width: 450px;
+    background-color: darkcyan;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bannerText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* footer settings for entire site */
+footer {
+    width: 100%;
+    height: 75px;
+    background: rgb(75, 75, 75);
+    color: white;
+    text-align: center;
+    border-top: 5px solid darkcyan;
+    padding: 20px;
+    font-size: small;
+}
+
+/* responsive styling for screen wdths >640 and <768 */
+  @media (min-width: 641px) {
+
+    header {
+        height: 0px;
+        opacity: 0;
+    }
+
+    .navbar-brand {
+        opacity: 1;
+    } 
+
+    .nav-link {
+        align-items: right;
+    }
+    
+    h2 {
+        color: darkcyan;
+        background-color: darkcyan;
+    }
+
+    #headshot {
+       float: left;
+       width: 350px;
+       height: 350px;
+    }
+
+    main div {
+        padding-top: 5%;
+    }
+    .container {
+        position: relative;
+        padding: 5%;
+      }
+      
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 150px;
+      }
+      
+      .banner {
+        height: 35px;
+        width: 250px;
+
+      }
+  
+/* responsive styling for screen wdths >768 and <980 */
+  @media (min-width: 769px) {
+    main {
+        max-width: 640px;
+    }
+
+    .justify-content-end {
+        -ms-flex-pack:end!important;
+        justify-content:flex-end!important}
+    }
+    
+    #headshot {
+        float: left;
+    }
+    main div {
+        padding-top: 5%;
+    }
+}
+
+
+@media (min-width: 1100px) {
+
+
+    .justify-content-end {
+        -ms-flex-pack:end!important;
+        justify-content:flex-end!important}
+    }
+    
+}
