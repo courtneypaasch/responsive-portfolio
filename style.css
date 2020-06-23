@@ -17,11 +17,17 @@ header {
 nav{
     background-color: azure;
     border-bottom: 2px solid darkgrey;
+    }
+
+.justify {
+    -ms-flex-pack:center!important;
+    justify-content:center!important;
 }
 
 .navbar-brand {
     opacity: 0;
     width: 0px;
+    float: left;
 }
 
 .nav-link {
@@ -84,24 +90,22 @@ form button {
 
 /* portfolio page settings */
 .container {
-    position: relative;
-    padding: 5%;
+    padding-left: 5%;
+}
+  .col-md-auto {
+      padding: 5%;
   }
-  
+
   .image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 450px;
     height: 350px;
-  }
+  } 
   
   .banner {
-    position: absolute;
-    top: 65%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: sticky;
     height: 75px;
     width: 450px;
     background-color: darkcyan;
@@ -133,21 +137,22 @@ footer {
     font-size: small;
 }
 
-/* responsive styling for screen wdths >640 and <768 */
-  @media (min-width: 641px) {
+/* responsive styling for screen wdths >768 and <980 */
+@media (min-width: 769px) {
 
     header {
         height: 0px;
         opacity: 0;
     }
 
+    .justify {
+        -ms-flex-pack:end!important;
+        justify-content:flex-end!important
+    }
+
     .navbar-brand {
         opacity: 1;
     } 
-
-    .nav-link {
-        align-items: right;
-    }
     
     h2 {
         color: darkcyan;
@@ -160,54 +165,32 @@ footer {
        height: 350px;
     }
 
-    main div {
+    .bio {
         padding-top: 5%;
     }
-    .container {
-        position: relative;
-        padding: 5%;
-      }
-      
-      .image {
+
+    .col-md-auto {
+        padding: 10px;
+    }
+
+    .image {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 250px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
       }
       
-      .banner {
+    .banner {
+        position: sticky;
         height: 35px;
-        width: 250px;
+        width: 300px;
 
       }
-  
-/* responsive styling for screen wdths >768 and <980 */
-  @media (min-width: 769px) {
+  }
+  /* responsive styling for screen wdths >768 and <980 */
+@media (min-width: 980px) {
     main {
-        max-width: 640px;
+        max-width: 775px;
     }
-
-    .justify-content-end {
-        -ms-flex-pack:end!important;
-        justify-content:flex-end!important}
-    }
-    
-    #headshot {
-        float: left;
-    }
-    main div {
-        padding-top: 5%;
-    }
-}
-
-
-@media (min-width: 1100px) {
-
-
-    .justify-content-end {
-        -ms-flex-pack:end!important;
-        justify-content:flex-end!important}
-    }
-    
 }
