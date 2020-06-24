@@ -8,8 +8,9 @@ A link to the site hosted on github is here: https://courtneypaasch.github.io/re
 
 Screenshots of each page are below:
 
-![courtneypaasch github io_responsive-portfolio_](https://user-images.githubusercontent.com/40651335/85487477-a1101c00-b59a-11ea-8b76-bbed2245e715.png)
+![courtneypaasch github io_responsive-portfolio_index html](https://user-images.githubusercontent.com/40651335/85494958-a0ca4d80-b5a7-11ea-9eca-b7392c878985.png)
 
-![courtneypaasch github io_responsive-portfolio_portfolio html](https://user-images.githubusercontent.com/40651335/85487480-a2414900-b59a-11ea-8eea-e945bdd2486c.png)
+![courtneypaasch github io_responsive-portfolio_portfolio html](https://user-images.githubusercontent.com/40651335/85494963-a2941100-b5a7-11ea-819d-c9ee122ec018.png)
 
-![courtneypaasch github io_responsive-portfolio_contact html](https://user-images.githubusercontent.com/40651335/85487486-a40b0c80-b59a-11ea-816d-e4baf9ff84b1.png)
+![courtneypaasch github io_responsive-portfolio_contact html](https://user-images.githubusercontent.com/40651335/85494967-a45dd480-b5a7-11ea-8d32-1136425d6864.png)
+
