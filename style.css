@@ -1,196 +1,200 @@
-
-
 body {
-    background-color: rgb(216, 224, 224);
+  background-color: rgb(216, 224, 224);
 }
 /* set the header for 640px */
 header {
-    background: darkcyan;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 45px;
-    height: 75px;
+  background: darkcyan;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  height: 75px;
 }
- 
+
 /* navigation settings - color, size, etc */
-nav{
-    background-color: azure;
-    border-bottom: 2px solid darkgrey;
-    }
+nav {
+  background-color: azure;
+  border-bottom: 2px solid darkgrey;
+}
+
+.nav-links {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .justify {
-    -ms-flex-pack:center!important;
-    justify-content:center!important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 .navbar-brand {
-    opacity: 0;
-    width: 0px;
-    float: left;
+  opacity: 0;
+  width: 0;
+  float: left;
 }
 
 .nav-link {
-    color: darkcyan;
+  color: darkcyan;
 }
 
 .nav-link:hover {
-    color: rgb(32, 32, 32);
+  color: rgb(32, 32, 32);
 }
 
 /* main formating for all pages */
 main {
-    width: 95%;
-    height: auto;
-    background-color: azure;
-    margin: 3%;
-    padding-bottom: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
+  width: 95%;
+  height: auto;
+  background-color: azure;
+  margin: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 h1 {
-    color: darkcyan;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color: darkcyan;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 hr {
-    width:  90%;
-    border-width: 3px;
+  width: 90%;
+  border-width: 3px;
 }
 
 /* contact form settings */
 form {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    font-size: large;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  font-size: large;
 }
 
 form button {
-    background-color: darkcyan !important;
-    border: darkcyan !important;
-    color: azure !important;
+  background-color: darkcyan !important;
+  border: darkcyan !important;
+  color: azure !important;
 }
 
 /* about me page settings */
 #headshot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5%
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
 }
 #bio {
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* portfolio page settings */
 .container {
-    padding-left: 5%;
+  padding-left: 5%;
 }
+.col-md-auto {
+  padding: 5%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 350px;
+}
+
+.banner {
+  position: sticky;
+  height: 75px;
+  width: 450px;
+  background-color: darkcyan;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* footer settings for entire site */
+footer {
+  width: 100%;
+  height: 75px;
+  background: rgb(75, 75, 75);
+  color: white;
+  text-align: center;
+  border-top: 5px solid darkcyan;
+  padding: 20px;
+  font-size: small;
+}
+
+/* responsive styling for screen wdths >768 and <980 */
+@media (min-width: 769px) {
+  header {
+    height: 0px;
+    opacity: 0;
+  }
+
+  .justify {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+
+  .nav-links {
+    margin-left: 80%;
+  }
+
+  .navbar-brand {
+    opacity: 1;
+  }
+
+  h2 {
+    color: darkcyan;
+  }
+
+  #headshot {
+    float: left;
+    width: 350px;
+    height: 350px;
+  }
+
+  .bio {
+    padding-top: 5%;
+  }
+
   .col-md-auto {
-      padding: 5%;
+    padding: 10px;
   }
 
   .image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
-    height: 350px;
-  } 
-  
+    width: 300px;
+    height: 200px;
+  }
+
   .banner {
     position: sticky;
-    height: 75px;
-    width: 450px;
-    background-color: darkcyan;
-    margin-left: auto;
-    margin-right: auto;
+    height: 35px;
+    width: 300px;
   }
-
-  .bannerText {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-/* footer settings for entire site */
-footer {
-    width: 100%;
-    height: 75px;
-    background: rgb(75, 75, 75);
-    color: white;
-    text-align: center;
-    border-top: 5px solid darkcyan;
-    padding: 20px;
-    font-size: small;
 }
-
 /* responsive styling for screen wdths >768 and <980 */
-@media (min-width: 769px) {
-
-    header {
-        height: 0px;
-        opacity: 0;
-    }
-
-    .justify {
-        -ms-flex-pack:end!important;
-        justify-content:flex-end!important
-    }
-
-    .navbar-brand {
-        opacity: 1;
-    } 
-    
-    h2 {
-        color: darkcyan;
-        background-color: darkcyan;
-    }
-
-    #headshot {
-       float: left;
-       width: 350px;
-       height: 350px;
-    }
-
-    .bio {
-        padding-top: 5%;
-    }
-
-    .col-md-auto {
-        padding: 10px;
-    }
-
-    .image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-        height: 200px;
-      }
-      
-    .banner {
-        position: sticky;
-        height: 35px;
-        width: 300px;
-
-      }
-  }
-  /* responsive styling for screen wdths >768 and <980 */
 @media (min-width: 980px) {
-    main {
-        max-width: 775px;
-    }
+  main {
+    max-width: 775px;
+  }
 }
