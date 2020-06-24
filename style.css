@@ -152,13 +152,16 @@ footer {
     justify-content: flex-end !important;
   }
 
+  .nav-links {
+    margin-left: 80%;
+  }
+
   .navbar-brand {
     opacity: 1;
   }
 
   h2 {
-    color: white;
-    background-color: darkcyan;
+    color: darkcyan;
   }
 
   #headshot {
