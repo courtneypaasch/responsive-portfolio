@@ -36,6 +36,10 @@ nav {
   color: rgb(32, 32, 32);
 }
 
+a {
+  color: white;
+}
+
 /* main formating for all pages */
 main {
   width: 95%;
